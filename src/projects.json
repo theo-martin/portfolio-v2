@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Booki",
+    "image1": "Booki",
+    "mockup": "BookiMockup",
+    "text": "Ce projet est mon deuxième projet en HTML CSS mais c'est le premier gros projet. J'ai découvert les FlexBox sur ce projet",
+    "github": "",
+    "rendu": "https://theomartin.fr/Booki/accueil",
+    "figcaptioncolor": ""
+  },
+  {
+    "id": 2,
+    "name": "ohmyfood",
+    "image1": "Ohmyfood",
+    "mockup": "OhmyfoodMockup",
+    "text": "Sur ce projet, j'ai découvert les animations en CSS et l'utilisation de Sass pour écrire le CSS",
+    "github": "https://github.com/theo-martin/OhMyFood",
+    "rendu": "https://theomartin.fr/OhMyFood/accueil",
+    "figcaptioncolor": "black"
+  },
+  {
+    "id": 3,
+    "name": "Print-it",
+    "image1": "Print_it",
+    "mockup": "PrintItMockup",
+    "text": "Ce projet est mon premier projet en JavaScript, la base du code était déjà présente. J'ai dû ajouter un carrousel sur la bannière",
+    "github": "https://github.com/theo-martin/Print-it-JS-main",
+    "rendu": "https://theomartin.fr/Print-it-JS-main/accueil",
+    "figcaptioncolor": ""
+  },
+  {
+    "id": 4,
+    "name": "Portfolio-Sophie-Bluel",
+    "image1": "Sophie_Bluel",
+    "mockup": "SophieBluelMockup",
+    "text": "Dans ce projet, j'ai utilisé l'API pour récupérer dynamiquement les projets, ajouter des projets, filtrer des projets... Le HTML est utilisé pour créer une page de connexion, gérée dynamiquement ensuite avec du JavaScript.",
+    "github": "https://github.com/theo-martin/Portfolio-Sophie-Bluel",
+    "rendu": "",
+    "figcaptioncolor": ""
+  },
+  {
+    "id": 5,
+    "name": "Nina_Carducci",
+    "image1": "apres",
+    "mockup": "Avant",
+    "text": "Dans ce projet, j'ai dû établir un audit SEO et réaliser les modifications pour le référencement ainsi que pour l'accessibilité et les performances. Avant les modifications, le projet avait un très mauvais score sur https://pagespeed.web.dev/ (lighthouse).",
+    "github": "https://github.com/theo-martin/nina_carducci",
+    "rendu": "https://theomartin.fr/nina_carducci/",
+    "figcaptioncolor": "black"
+  },
+  {
+    "id": 6,
+    "name": "Kasa",
+    "image1": "kasa",
+    "mockup": "KasaMockup",
+    "text": "Dans ce projet, j'ai dû créer un site en React utilisant des composants réutilisables dans différentes pages comme les boutons déroulants.",
+    "github": "https://github.com/theo-martin/kasa",
+    "rendu": "https://kasa.theomartin.fr/",
+    "figcaptioncolor": "black"
+  },
+  {
+    "id": 7,
+    "name": "ArgentBank",
+    "image1": "ArgentBank",
+    "mockup": "ArgentBankMockup",
+    "text": "Dans ce projet, avec Redux, j'ai mis en place un système de connexion pour accéder à la page utilisateur et permettre de modifier l'username.",
+    "github": "https://github.com/theo-martin/ArgentBank-website",
+    "rendu": "",
+    "figcaptioncolor": "black"
+  }
+]

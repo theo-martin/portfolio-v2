@@ -1,0 +1,19 @@
+// @import "base/";
+@use "base/reset";
+@use "base/typography";
+
+// @import "utils/";
+@use "utils/variables";
+@use "utils/mixin";
+@use "utils/animations";
+
+// @use"components/";
+@use "components/modal";
+//@use "layouts/";
+@use "layouts/header";
+@use "layouts/footer";
+
+// @import "pages/";
+@use "pages/homepage";
+@use "pages/mentionslegales";
+@use "pages/Page404";

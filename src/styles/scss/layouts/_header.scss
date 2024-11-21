@@ -1,0 +1,274 @@
+@use "../utils/variables";
+// Styles pour .header
+.header {
+  color: variables.$blue;
+  &__cv {
+    height: 36px;
+    display: flex;
+    position: absolute;
+    margin: 22px 0 0 10px;
+    gap: 10px;
+    &__img {
+      font-size: 42px;
+      font-weight: bold;
+    }
+    &__p {
+      font-size: 36px;
+      font-family: variables.$font-family;
+      font-weight: bold;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__div {
+      margin-top: 100px;
+      margin-bottom: 60px;
+      border-radius: 90%;
+      border: 3px solid variables.$blue;
+      &__img {
+        display: block;
+        position: relative;
+        top: 10px;
+        right: 10px;
+        border-radius: 90%;
+        height: 220px;
+        width: 220px;
+        @media (min-width: 1024px) {
+          height: 275px;
+          width: 275px;
+        }
+      }
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: flex-end;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 115px;
+    margin: 0 55px 90px 55px;
+
+    &__cv {
+      top: 30px;
+      right: 30px;
+      margin: unset;
+    }
+  }
+}
+
+// Styles pour .nav
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  &__burger {
+    cursor: pointer;
+    font-size: 40px;
+    position: fixed;
+    margin-top: 25px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+  &__sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    background-color: variables.$nav-bg-color;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 217px;
+    top: 0;
+    right: -250px;
+    transition: right 0.5s ease;
+    &--active {
+      right: 0;
+    }
+    @media (min-width: 768px) {
+      width: 270px;
+      right: -270px;
+      transition: right 0.5s ease;
+      &--active {
+        right: 0;
+      }
+    }
+    @media (min-width: 1024px) {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin: 0 37px;
+      background-color: unset;
+      height: unset;
+      position: unset;
+    }
+    &__close {
+      cursor: pointer;
+      font-size: 42px;
+      margin-right: 10px;
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+    &__ul {
+      padding: 0 25px 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      list-style-type: none;
+      @media (min-width: 768px) {
+        padding: 0 25px 0 30px;
+      }
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+      }
+      &__li__a {
+        font-family: variables.$font-family;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+    justify-content: center;
+    &__burger {
+      display: none;
+    }
+  }
+}
+
+// @media (min-width: 1024px) {
+//   // .nav__sidenav__ul__li__a {
+//   //   display: inline-block;
+//   //   margin: 0;
+//   //   text-transform: uppercase;
+//   // }
+//   .nav__sidenav__ul__li__a::after {
+//     display: block;
+//     content: "";
+//     border-bottom: solid 3px #0099a3;
+//     transform: scaleX(0);
+//     transition: transform 250ms ease-in-out;
+//   }
+//   .nav__sidenav__ul__li__a:hover::after {
+//     transform: scaleX(1);
+//   }
+// }
+.details {
+  width: 311.61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__h1 {
+    display: flex;
+    align-items: baseline;
+    font-family: orbitron;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 5px;
+    &__h1::after {
+      margin-left: 8.7px;
+      background-color: #0099a3;
+      width: 22px;
+      height: 3px;
+      content: "";
+      align-items: baseline;
+      display: block;
+    }
+  }
+  &__p {
+    font-size: 23px;
+  }
+  @media (min-width: 1024px) {
+    width: unset;
+    align-items: flex-start;
+    &__h1 {
+      font-size: 45px;
+    }
+    &__text {
+      margin-top: 200px;
+    }
+    &__p {
+      font-size: 29px;
+    }
+  }
+}
+
+.github {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  &__i {
+    display: flex;
+    font-size: 24px;
+  }
+  &__p {
+    display: flex;
+    font-size: 20px;
+    align-items: baseline;
+    &::after {
+      margin-left: 8.7px;
+      background-color: #0099a3;
+      width: 198px;
+      height: 3px;
+      content: "";
+      align-items: baseline;
+      display: block;
+    }
+  }
+  @media (min-width: 1024px) {
+    &__i {
+      font-size: 29px;
+    }
+    &__p {
+      font-size: 29px;
+    }
+    &__p::after {
+      width: 245px;
+    }
+  }
+}
+
+.header-icon {
+  margin-top: 20px;
+  width: 311.33px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 55px;
+  &__chevron {
+    text-align: center;
+    width: 100%;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 14px;
+  }
+  &__logo {
+    height: 35px;
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 45px;
+    &__chevron {
+      margin-top: 60px;
+      margin-left: 10px;
+    }
+  }
+}

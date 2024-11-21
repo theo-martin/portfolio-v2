@@ -1,0 +1,45 @@
+@use "../utils/variables";
+.Page404 {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    height: 99px;
+    width: 198px;
+    margin: 113px 0 113px 0;
+  }
+  &__p404 {
+    color: variables.$blue;
+    font-size: 150px;
+    font-weight: bold;
+  }
+  &__p {
+    display: flex;
+    flex-direction: column;
+    color: variables.$blue;
+    text-align: center;
+    // width: 260px;
+  }
+  &__link {
+    color: variables.$blue;
+    margin: 50px 0 50px 0;
+    text-decoration: underline;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1024px) {
+    &__link {
+      margin: 113px 0 113px 0;
+    }
+
+    &__img {
+      height: 263px;
+      width: 597px;
+    }
+    &__p {
+      flex-direction: row;
+    }
+  }
+}

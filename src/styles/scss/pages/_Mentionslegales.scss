@@ -1,0 +1,65 @@
+@use "../utils/variables";
+
+.mention-legales {
+  color: #d9d9d9;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  &__h1 {
+    text-align: center;
+    color: variables.$blue;
+    border-bottom: solid 2px variables.$blue;
+    margin-top: 80px;
+  }
+  span {
+    color: variables.$blue;
+  }
+  h2 {
+    color: variables.$blue;
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    gap: 60px;
+  }
+  @media (min-width: 1024px) {
+    gap: 90px;
+  }
+}
+.proprietaire-du-site {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  &__h2 {
+    font-size: 20px;
+  }
+}
+.hebergeur {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  &__groupe {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  &__h3 {
+    color: variables.$blue;
+  }
+}
+.CGU {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.prevention__h2 {
+  font-size: 26px;
+  font-family: inter;
+}
+.proprietaire-du-site {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  &__h2 {
+    font-size: 20px;
+  }
+}

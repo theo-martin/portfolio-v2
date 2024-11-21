@@ -1,0 +1,64 @@
+@use "../utils/variables";
+.footer {
+  //   background-image: url("./../../Images/background-footer.svg");
+  background-repeat: no-repeat;
+  //   background-size: cover;
+  background-position: center 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 15px 15px 15px;
+  color: variables.$footer-color;
+  flex-direction: column;
+  gap: 10px;
+  &--404 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  &__button {
+    padding: 18px 20px;
+    width: 88%;
+    width: 78%;
+    gap: 4px;
+    display: flex;
+    justify-content: center;
+    background-color: variables.$blue;
+    @media (min-width: 768px) {
+      width: 350px;
+    }
+    // &--404 {
+    //   width: 78%;
+    // }
+    &__p {
+      font-family: variables.$font-family;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &__img {
+      height: 24px;
+    }
+  }
+  &__contact {
+    margin-top: 20px;
+    display: flex;
+    gap: 6px;
+    &__i {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__github {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    &__p {
+      font-size: 20px;
+    }
+  }
+
+  &__mentions-legales__p {
+    font-size: 9px;
+  }
+}
