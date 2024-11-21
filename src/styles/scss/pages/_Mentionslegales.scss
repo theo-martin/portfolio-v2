@@ -1,7 +1,7 @@
 @use "../utils/variables";
 
 .mention-legales {
-  color: #d9d9d9;
+  color: variables.$color-light;
   display: flex;
   gap: 30px;
   flex-direction: column;

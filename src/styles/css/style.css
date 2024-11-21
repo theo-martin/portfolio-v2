@@ -299,7 +299,7 @@ dialog {
   }
 }
 .nav__sidenav__ul__li__a {
-  font-family: "Inter", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
@@ -326,7 +326,7 @@ dialog {
 .details__h1 {
   display: flex;
   align-items: baseline;
-  font-family: orbitron;
+  font-family: "Orbitron", sans-serif;
   font-weight: bold;
   font-size: 35px;
   margin-bottom: 5px;
