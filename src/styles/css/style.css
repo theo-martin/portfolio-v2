@@ -137,6 +137,9 @@ dialog {
 .section-modal__groupe-btn__btn:hover {
   background: rgb(0, 105.1288343558, 112);
 }
+.section-modal__groupe-btn__btn > * {
+  background-color: unset;
+}
 .section-modal__close {
   cursor: pointer;
   color: #0099a3;

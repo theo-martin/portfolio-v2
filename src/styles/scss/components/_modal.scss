@@ -95,15 +95,12 @@ dialog {
       color: variables.$color-light;
       background-color: variables.$blue;
       transition: background 0.3s;
-
       &:hover {
         background: color.adjust(variables.$blue, $lightness: -10%);
       }
-
-      // &__i,
-      // &__p {
-      //   background-color: variables.$blue;
-      // }
+      & > * {
+        background-color: unset;
+      }
     }
   }
 

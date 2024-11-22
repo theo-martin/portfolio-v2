@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import CV from "../Images/CV-Theo.pdf";
 import download_regular_48 from "../Images/download-regular-48.webp";
 import PDP from "../Images/photo-de-profil.webp";
@@ -41,13 +42,13 @@ export default function Header(props) {
               </a>
             </div>
             <div className="header-icon">
-              <a href="#a-propos" className="header-icon__chevron">
+              <HashLink to="#a-propos" className="header-icon__chevron">
                 <img
                   className="header-icon__chevron__img"
                   src={chevron_down_redular_48}
                   alt="chevron"
                 />
-              </a>
+              </HashLink>
 
               <div className="header-icon__container">
                 <img
