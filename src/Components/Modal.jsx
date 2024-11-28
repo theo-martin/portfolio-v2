@@ -1,12 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import projects from "../projects.json";
 import useModal from "../hooks/useModal";
 import images from "../images";
 export default function Modal(props) {
   const { isOpen, openModal, closeModal } = useModal();
   const [modalContent, setModalContent] = useState(null);
+  // const handleOpenModal = (name) => {
+  //   const matchingObject = projects.find((item) => item.name === name);
+  //   if (matchingObject) {
+  //     setModalContent({
+  //       ...matchingObject,
+  //       image1: images[matchingObject.image1],
+  //     });
+  //     openModal();
+  //   } else {
+  //     console.warn(`Aucun objet trouvé dans le tableau avec l'ID: ${name}`);
+  //   }
+  // };
+  const findProjectByName = useMemo(
+    () => (name) => {
+      return projects.find((item) => item.name === name);
+    },
+    []
+  );
   const handleOpenModal = (name) => {
-    const matchingObject = projects.find((item) => item.name === name);
+    const matchingObject = findProjectByName(name);
     if (matchingObject) {
       setModalContent({
         ...matchingObject,

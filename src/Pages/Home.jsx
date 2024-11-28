@@ -189,8 +189,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Footer footer="footer" footerbutton="footer__button" />
       </main>
+      <Footer footer="footer" footerbutton="footer__button" />
     </>
   );
 }
